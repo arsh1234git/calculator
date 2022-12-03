@@ -9,13 +9,15 @@ function calculate(event){
     if(btnValue=="="){
         displayValue = eval(displayValue);
         input.value = displayValue;
+
+        displayValue = input.value;//this line is very important after calculating value ,input value should be assighned to display value so that backspace can work properly
     }
     else if(btnValue=="x"){
         btnValue ="*";
         displayValue+=btnValue;
         input.value = displayValue;
     }
-    else if(btnValue=="C"){
+    else if(btnValue=="CLEAR"){
         displayValue="";
         input.value =displayValue;
     }
@@ -24,9 +26,9 @@ function calculate(event){
         input.value = displayValue;
     }
     else if(event.target.id =="backspace" || event.target.id=="backspace2"){
-        console.log(event)
         displayValue = displayValue.slice(0,-1);
         input.value = displayValue;
+        console.log(displayValue)
     }
     else{
         displayValue += btnValue;

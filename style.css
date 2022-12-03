@@ -23,9 +23,9 @@ h3{
 }
 .description{
     position: absolute;
-    left: 40%;
+    left: 3%;
     z-index: 2;
-    top: 4%;
+    top: 2%;
 }
 .backspace{
     position: absolute;
@@ -80,7 +80,7 @@ button{
     /* width: 65px;
     height: 50px; */
     margin: 2px -1px;
-    border-radius: 14px;
+    border-radius: 15px;
     border: none;
     /* background-color: gray; */
     /* border: 2px solid black; */
@@ -99,4 +99,12 @@ button{
 }
 #equal{
     background-color: #C73D00;
+}
+@media (max-width:420px) {
+    .calculator{
+        width: 90%;
+    }
+    input{
+        height: 120px
+    };
 }
