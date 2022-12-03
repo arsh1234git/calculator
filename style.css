@@ -102,9 +102,16 @@ button{
 }
 @media (max-width:420px) {
     .calculator{
-        width: 90%;
+        width: 95%;
+        height: 75vh;
+    }
+    .row{
+        height: 90px;
     }
     input{
-        height: 120px
+        height: 140px
     };
+    button{
+        padding:10px 3px;
+    }
 }
