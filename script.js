@@ -19,6 +19,15 @@ function calculate(event){
         displayValue="";
         input.value =displayValue;
     }
+    else if(btnValue=="%"){
+        displayValue+="/100*";
+        input.value = displayValue;
+    }
+    else if(event.target.id =="backspace" || event.target.id=="backspace2"){
+        console.log(event)
+        displayValue = displayValue.slice(0,-1);
+        input.value = displayValue;
+    }
     else{
         displayValue += btnValue;
         input.value = displayValue;
