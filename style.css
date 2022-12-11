@@ -54,6 +54,7 @@ input{
     color: white;
     text-align-last: right; 
     outline: none;   
+    cursor:grab;
 }
 .row{
     display: flex;
@@ -90,10 +91,10 @@ button{
     box-shadow: 1px 0px 0px gray;
 
 }
-/* button:hover{
+button:hover{
     background-color: blue;
     opacity: 0.7;
-} */
+}
 #clear{
     background-color: red;
 }
