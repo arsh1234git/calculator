@@ -4,8 +4,23 @@ let buttons = document.querySelectorAll("button");
 for(t of buttons){
     t.addEventListener("click",calculate)
 }
+let backIcon = document.getElementById("backspace2");
+
+backIcon.addEventListener("click",()=>{
+    let backspacebtn = document.getElementById("backspace")
+    let btnBackgroundColor = backspacebtn.style.backgroundColor;
+    backspacebtn.style.backgroundColor = "blue";
+    setTimeout(()=>{
+        backspacebtn.style.backgroundColor = btnBackgroundColor;
+    },100)
+})
 function calculate(event){
     let btnValue = event.target.innerText;
+    let btnBackgroundColor = event.target.style.backgroundColor;
+    event.target.style.backgroundColor = "blue";
+    setTimeout(()=>{
+        event.target.style.backgroundColor = btnBackgroundColor;
+    },100)
     if(btnValue=="="){
         displayValue = eval(displayValue);
         input.value = displayValue;

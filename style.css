@@ -91,10 +91,11 @@ button{
     box-shadow: 1px 0px 0px gray;
 
 }
-button:hover{
+/* button:hover{
     background-color: blue;
     opacity: 0.7;
-}
+    background-color: #191919;
+} */
 #clear{
     background-color: red;
 }
